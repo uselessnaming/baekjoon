@@ -11,12 +11,9 @@ while True:
 
     j += 1
 
-tmp = [i for i in range(1,j+1)]
-middle = j // 2
-
 result = ''
 if j % 2 == 0:
-    result = str(tmp[j+n-1]) + '/' + str(tmp[abs(n)])
+    result = str(j+n) + '/' + str(abs(n)+1)
 else:
-    result = str(tmp[abs(n)]) + '/' + str(tmp[j+n-1])
+    result = str(abs(n)+1) + '/' + str(j+n)
 print(result)
