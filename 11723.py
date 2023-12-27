@@ -1,9 +1,11 @@
-M = int(input())
+import sys
+
+M = int(sys.stdin.readline())
 
 sets = set()
 
 for _ in range(M):
-    command = input()
+    command = sys.stdin.readline().strip()
 
     if command == "all":
         sets = set(i for i in range(1,21))
